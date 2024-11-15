@@ -33,8 +33,8 @@ public class ContextListener implements ServletContextListener {
          }
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("defaultpu", props);
-        sce.getServletContext().setAttribute("EMFactory", emf);
-    }
+        sce.getServletContext().setAttribute("EMFactory", emf);}
+    
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
